@@ -1,0 +1,36 @@
+<script>
+
+function greeting(){
+    return 'hello';
+}
+console.log(greeting());
+
+//arrow notation
+/*notes: 
+- if we have one statement, the return statement is implied. 
+- no need for curly braces
+- no need for function keyword
+- if there was more going on in the function, we could use curly braces & return
+*/
+var greeting2 = () => 'hello';
+console.log(greeting2);
+
+//example with parameters
+var add = (a,b) => a+b;
+console.log(add(1, 3));
+
+//classic callback function
+var numbers = ['one', 'two', 'three'];
+
+var output = numbers.map(function(label){
+    return label.length;
+});
+console.log(output);
+//returns length of each variable i.e. expected output: 3, 3, 5
+
+//arrow callback notation
+var output2 = numbers.map(label => label.length);
+console.log(output2);
+//same output as before
+
+</script>

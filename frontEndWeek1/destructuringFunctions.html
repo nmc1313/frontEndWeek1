@@ -1,0 +1,23 @@
+<script>
+function f(){
+    return [1, 2, 3, 4];
+}
+const [a, b] = f();
+console.log(a);
+console.log(b);
+
+//user object
+const user = {
+    id: 209,
+    firstName: 'peter',
+    lastName: 'parker',
+    age: 19
+}
+//function destructures object being sent to it and only takes the id property
+function userId({id}){
+    return id;
+}
+//have to pass whole object into function!
+console.log(userId(user));
+
+</script>

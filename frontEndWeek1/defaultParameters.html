@@ -1,0 +1,30 @@
+<script>
+//without default parameter
+function multiply(a,b){
+    return a*b;
+}
+
+console.log(multiply(5,4));
+//will return NaN because there is no second parameter: 
+console.log(multiply(5));
+
+//old method to still run the function if we only define one item
+function multiply2(a,b){
+    if (!b) b = 1;
+    return a*b;
+}
+
+console.log(multiply(5,4));
+//now this does return an answer:
+console.log(multiply(5));
+
+//default parameters allow for a more concise way to solve this problem:
+function multiply3(a,b=1){
+    return a*b;
+}
+
+console.log(multiply(5,4));
+console.log(multiply(5));
+console.log(multiply(5, undefined));
+
+</script>

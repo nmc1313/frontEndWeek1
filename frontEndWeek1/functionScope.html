@@ -1,0 +1,23 @@
+<script>
+
+var age = 20; 
+console.log(age);
+
+//this will change the age variable 
+age = 30; 
+console.log(age);
+
+//this will change it again
+var age = 40;
+console.log(40);
+
+//to avoid a change: 
+function userInfo(){
+    var ageNew = 20; 
+    return ageNew; 
+}
+
+console.log(userInfo());
+// console.log(ageNew) would not return anything, because ageNew is a variable only defined inside the function (local scope). var is what keeps this from running - without var it will have global scope
+
+</script>

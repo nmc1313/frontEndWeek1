@@ -1,0 +1,23 @@
+<script>
+//Task 1: Spread
+const terrestrials = ["fox", "lion", "elephant"];
+const aquatics = ["shark", "whale", "octopus"];
+
+// TODO: create the array allAnimals that contains all animals from terrestrials and aquatics arrays
+let allAnimals = [...terrestrials, ...aquatics];
+console.log(JSON.stringify(allAnimals));
+
+//Task 2: Rest
+// TODO: create the function sumAll
+function sumAll(...n){
+//reduce will act like a loop though the elements
+    return n.reduce((a,b) => {
+        return a+b;
+    });
+}
+
+console.log(sumAll(1, 2)); // expected output: 3
+console.log(sumAll(1, 2, 3)); // expected output: 6
+console.log(sumAll(1, 2, 3, 4)); // expected output: 10
+
+</script>

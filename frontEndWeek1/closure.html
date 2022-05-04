@@ -1,0 +1,18 @@
+<script>
+
+function outer(){
+    var counter = 1; 
+    
+    function inner(){
+        console.log(counter);
+        counter++;
+    }
+}
+
+var inner = outer();
+inner();
+inner();
+inner();
+//expected output: 1, 2, 3 because it has accesss to counter from being within the function despite not being defined in inner. Inner function preserves the scope chain from the outer function (inner function remembers the value of the variables that are in scope)
+
+</script>

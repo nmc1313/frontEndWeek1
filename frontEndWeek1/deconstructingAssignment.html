@@ -1,0 +1,33 @@
+<script>
+//Task 1
+const books = ["fiction", ["horror", "literary"], "science"];
+
+// TODO: Use destructuring to create the variables fiction horror literary and science
+let fiction = books[0];
+let horror = books[1][0];
+let literary = books[1][1];
+let science = books[2];
+console.log(fiction);
+console.log(horror);
+console.log(literary);
+console.log(science);
+
+//Task 2
+const Student = {
+  firstName: "Joe",
+  university: "MIT",
+  studentInfo: {
+    studentid: 555,
+  },
+};
+
+// TODO: Use destructuring to create the variables firstName university and studentid
+let {firstName} = Student;
+let {university} = Student;
+//note nested object syntax!!
+let {studentInfo: {studentid}} = Student;
+console.log(firstName);
+console.log(university);
+console.log(studentid);
+
+</script>

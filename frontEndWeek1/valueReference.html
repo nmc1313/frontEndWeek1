@@ -1,0 +1,16 @@
+<script>
+//this changes both lists
+let numbers = [0, 1, 2, 3, 4, 5];
+let mycopy = numbers;
+mycopy[2] = 9;
+console.log(mycopy);
+console.log(numbers);
+
+//do without changing the original: SPREAD notation
+let numbers2 = [0, 1, 2, 3, 4, 5];
+let mycopy2 = [...numbers2];
+mycopy2[2] = 9;
+console.log(mycopy2);
+console.log(numbers2);
+
+</script>
